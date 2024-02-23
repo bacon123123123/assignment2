@@ -1,0 +1,57 @@
+Git Lab Tutorial: 23/2/24
+GitHub Account: 10/1/23
+
+1)
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   docs/status.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   Vehicle.h
+        modified:   main.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+
+2)
+9
+Command: git log --oneline | wc -l
+
+3)
+Fri Feb 23 23:27:51 2024 +0500
+Command: git log -1 -- README.md
+
+4)
+Branches let you work on your part without messing up the main project. You can make changes or add stuff without affecting everyone else.
+They also give you a space to test new ideas safely. If you're working on something big or unsure, you do it in a branch. If it works, great! You can add it to the main project later.
+
+5)
+Git log shows you a list of all the past changes (commits) made in the project. It's like a history book of what everyone has done.
+Git status tells you what's going on right now. It shows which changes you've made that you haven't saved (committed) yet. It's like a current to-do list of your changes.
+
+6) 
+git log -- Vehicle.h
+
+7)
+git log --grep="file"
+
+8)
+Inheritance is like getting traits or properties from your parents. In programming, a class can inherit features (like methods or variables) from another class, which helps in reusing code.
+Polymorphism is about taking many forms. In OOP, it means you can use a single function name to do different things based on what object it's being used on. Like a single function can work differently for a cat, a dog, or a bird.
+Encapsulation is about keeping the details hidden inside a class, exposing only what is necessary. This way, you protect the data and the inner workings of the class from outside interference and misuse.
+
+9)
+Imagine a big project is a kingdom. The "dictator" is like the king or queen who makes the final decisions. The "lieutenants" are like the nobles who look after different parts of the kingdom. People give their ideas (changes) to the nobles, who check them and then pass the good ones to the king or queen for the final okay. This way, the king or queen doesn't get overwhelmed.
+Now, think of this more like a team project where there's a team leader (the integration manager). Everyone works on their part of the project and then shows it to the team leader. The leader decides if it fits into the project. Unlike the kingdom, there can be more than one team leader, and you can choose which one to show your work to. This is more flexible because you're not stuck with just one person to approve your work.
+So, the big difference is how structured they are: the first one is more like a strict kingdom with clear levels, while the second one is more like a team project with flexible leaders.
+
+10)
+With a "Dictator and Lieutenants" workflow, a team of 100 developers can work better because:
+Instead of everyone trying to talk to one person (like in a centralized workflow), developers can focus on their parts and report to their specific "lieutenant". This way, work is more organized, and it's not chaos with everyone trying to update the main project at once. The "lieutenants" can quickly check the work in their areas and pass it up to the "dictator". This is faster than having one person (or a small team) check everything in a centralized setup.
